@@ -1,15 +1,13 @@
 phraseapp:
   access_token: "4f3e4a1b7e7c0f88604c93a2b3fef84c31746a8c8854ed491146d8962e0cc4f0"
   project_id: "26eaeaef8835e386dbcf8f3a0af3c9b0"
-  file_format: "properties"
-  file_format: "html"
   push:
     sources:
     - file: "./enrichment-admin/src/main/resources/fi/post/daas/registers/enrichment/web/*.properties"
-    - file: "./enrichment-admin/src/main/resources/fi/post/daas/registers/enrichment/web/*.html"
-    params:
-          locale_id: "894936e15fd3ea970f8e87c81f1b476d"
+      params:
+        file_format: "properties"
   pull:
     targets:
-    - file: "./enrichment-admin/src/main/resources/fi/post/daas/registers/enrichment/web/*<locale_code>.properties"
-    - file: "./enrichment-admin/src/main/resources/fi/post/daas/registers/enrichment/web/*<locale_code>.html"
+    - file: "./enrichment-admin/src/main/resources/fi/post/daas/registers/enrichment/web/<locale_code>.properties"
+      params:
+        file_format: "properties"
