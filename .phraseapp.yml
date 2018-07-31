@@ -6,8 +6,4 @@ phraseapp:
     - file: "./enrichment-admin/src/main/resources/fi/post/daas/registers/enrichment/web/EnrichmentAdminApplication.fi.properties"
       params:
         file_format: "properties"
-  # pull:
-    targets:
-    - file: "./enrichment-admin/src/main/resources/fi/post/daas/registers/enrichment/web/.<locale_code>.properties"
-      params:
-        file_format: "properties"
+  
