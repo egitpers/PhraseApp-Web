@@ -3,11 +3,11 @@ phraseapp:
   project_id: "26eaeaef8835e386dbcf8f3a0af3c9b0"
   push:
     sources:
-    - file: "./enrichment-admin/src/main/resources/fi/post/daas/registers/enrichment/web/*.properties"
+    - file: "./enrichment-admin/src/main/resources/fi/post/daas/registers/enrichment/web/*.<locale_code>.properties"
       params:
         file_format: "properties"
   pull:
     targets:
-    - file: "./enrichment-admin/src/main/resources/fi/post/daas/registers/enrichment/web/<locale_code>.properties"
+    - file: "./enrichment-admin/src/main/resources/fi/post/daas/registers/enrichment/web/*.<locale_code>.properties"
       params:
         file_format: "properties"
