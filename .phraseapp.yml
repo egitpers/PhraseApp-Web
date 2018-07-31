@@ -4,7 +4,7 @@ phraseapp:
   file_format: "properties"
   push:
     sources:
-    - file: "./enrichment-admin/src/main/resources/fi/post/daas/registers/enrichment/web/*.<locale_code>.properties"
+    - file: "./enrichment-admin/src/main/resources/fi/post/daas/registers/enrichment/web/*.properties"
       
   pull:
     targets:
