@@ -11,4 +11,3 @@ phraseapp:
     - file: "./enrichment-admin/src/main/resources/fi/post/daas/registers/enrichment/web/*.<locale_code>.properties"
       params:
         file_format: "properties"
-        
